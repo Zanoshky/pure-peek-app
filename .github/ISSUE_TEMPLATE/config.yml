@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: User guide
+    url: https://zanoshky.github.io/pure-peek-app/
+    about: Opening files, photos, PDF, tables, text, settings and answers to common questions.
+  - name: purepeek.zanoski.com
+    url: https://purepeek.zanoski.com
+    about: The Pure Peek website, with the privacy policy and contact details.

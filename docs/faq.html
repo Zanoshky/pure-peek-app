@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Questions · Pure Peek user guide</title>
+<meta name="description" content="Answers to common questions about Pure Peek, and what to try when something does not work.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Questions · Pure Peek user guide">
+<meta property="og:description" content="Answers to common questions about Pure Peek, and what to try when something does not work.">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/inter-semibold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/icon.svg" alt="" width="34" height="34"><span>Pure Peek</span></a>
+    <nav aria-label="Guide pages"><a href="index.html">Home</a><a href="guide.html">Guide</a><a href="faq.html" aria-current="page">Questions</a><a href="report.html">Report a bug</a></nav>
+  </div>
+</header>
+<main id="main" class="page">
+  <div class="wrap">
+
+    <p class="kicker">Questions</p>
+    <h1>Questions and fixes</h1>
+
+    <h2>Pure Peek is not in the Open with list</h2>
+    <p>Another app may be set to always open that kind of file. Open Android settings, Apps, that app, Open by default, and tap Clear defaults. Next time you tap a file, Android asks again. Settings, Opening files in Pure Peek names the app that opens PDFs now.</p>
+
+    <h2>Can it edit files?</h2>
+    <p>No. Pure Peek only shows files and never changes or resaves them.</p>
+
+    <h2>Why can I not see where a photo was taken?</h2>
+    <p>Android hides the place in a shared photo from apps that do not ask for the media location permission, and Pure Peek asks for no permissions. About this file says when a photo has a place that Android hid. Share without location still takes it out of the copy you send.</p>
+
+    <h2>How big a file can it open?</h2>
+    <p>We tested a CSV of 500,000 rows (20 MB) and a 52 MB log. Both open, scroll and search.</p>
+
+    <h2>A file opens as bytes</h2>
+    <p>Pure Peek shows anything it cannot read as bytes, with its size and checksum. If you think it should open, report it with the kind of file, and attach a sample if it holds nothing private.</p>
+
+    <h2>Does it use the internet?</h2>
+    <p>No. It has no internet permission, so Android itself stops it from going online. Web pages it shows load nothing from outside. See the <a href="https://purepeek.zanoski.com/privacy">privacy policy</a>.</p>
+
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>Guide text and images are shared under CC BY 4.0. The Pure Peek app itself is proprietary. Made by Marko Zanoski.</span>
+    <nav aria-label="Footer"><a href="https://play.google.com/store/apps/details?id=com.zanoshky.purepeek">Google Play</a><a href="https://purepeek.zanoski.com">purepeek.zanoski.com</a><a href="https://github.com/Zanoshky/pure-peek-app/issues">Issues</a><a href="https://purepeek.zanoski.com/privacy">Privacy</a></nav>
+  </div>
+</footer>
+</body>
+</html>

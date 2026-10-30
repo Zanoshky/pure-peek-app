@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guide · Pure Peek user guide</title>
+<meta name="description" content="How to use Pure Peek: opening files, photos, PDF, tables, text and code, web pages, zip, audio, video, fonts and settings.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Guide · Pure Peek user guide">
+<meta property="og:description" content="How to use Pure Peek: opening files, photos, PDF, tables, text and code, web pages, zip, audio, video, fonts and settings.">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/inter-semibold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/icon.svg" alt="" width="34" height="34"><span>Pure Peek</span></a>
+    <nav aria-label="Guide pages"><a href="index.html">Home</a><a href="guide.html" aria-current="page">Guide</a><a href="faq.html">Questions</a><a href="report.html">Report a bug</a></nav>
+  </div>
+</header>
+<main id="main" class="page">
+  <div class="wrap">
+
+    <p class="kicker">Guide</p>
+    <h1>How Pure Peek works</h1>
+
+    <h2>Open a file</h2>
+    <p>Pure Peek has no file browser of its own and needs no storage permission. Files reach it the ways Android offers:</p>
+    <dl>
+      <dt>Open with</dt><dd>Tap a file in Files, Gmail, Drive or Downloads. When Android asks which app to use, pick Pure Peek, then Always, so that kind of file opens straight away next time.</dd>
+      <dt>Share</dt><dd>Share any file, or several, to Pure Peek from another app.</dd>
+      <dt>Open files</dt><dd>On home, opens Android's file picker. Pick one file or many.</dd>
+      <dt>Open a folder</dt><dd>Pick a folder once and see its files as a grid or a list, newest first or by name. Open one and step through the rest with Previous file and Next file.</dd>
+      <dt>Photos</dt><dd>Opens Android's photo picker.</dd>
+      <dt>Recent files</dt><dd>Home lists what you opened lately. Turn this off in Settings, Privacy.</dd>
+    </dl>
+    <p>If another app always opens a kind of file, Settings, Opening files names it and takes you to its info page, where Open by default, Clear defaults hands the choice back.</p>
+
+    <h2>The viewer bar</h2>
+    <p>Every file opens with its name, kind and size at the top. The buttons there: Back, Find in this file (where the file has text), About this file, and More. More holds Share, Open with another app and the actions for that kind of file.</p>
+    <p>About this file shows the size in bytes, the kind, everything the file says about itself, and a SHA-256 checksum on request.</p>
+
+    <h2>Photos</h2>
+    <p>Photos open at full resolution, drawn in tiles, so zooming into a big photo stays sharp. Pinch to zoom, double tap for actual pixels, double tap again to fit. JPEG, PNG, WebP, HEIC, AVIF, GIF, DNG, BMP and more. Ultra HDR and wide colour photos show in full on screens that can.</p>
+    <p>About this file lists pixels, megapixels, colour space, camera, lens, exposure, ISO and when it was taken. More has Turn a quarter, Use as wallpaper or contact photo, and Share without location and camera details, which sends a copy with the GPS taken out and leaves the original alone.</p>
+
+    <h2>PDF</h2>
+    <p>Pages render again at every zoom, so small print stays crisp. More has Go to page, First page, Last page, Copy the text of this page, Print, and on dark looks, Night pages, which shows PDFs as light text on dark. A PDF opens on the page you left it. A locked PDF asks for its password. On a tablet or a wide screen, a page strip sits beside the document.</p>
+
+    <h2>Tables</h2>
+    <p>CSV, TSV and Excel files open as tables with the header row and the row numbers pinned while you scroll. Tap a column name for Sort smallest to largest, Sort largest to smallest, Column stats (sum, average, smallest, largest, most common values) and Copy the column. Excel files with several sheets show a tab for each sheet. More has Copy as CSV for the whole table, and a switch for files whose first row is data, not names; Settings sets the default.</p>
+
+    <h2>Text, code and documents</h2>
+    <p>Text, logs and code open with line numbers and wrap; both can be turned off in Settings. JSON has As saved and Tidy tabs, Markdown has Formatted and Source, and Word documents open as clean text. Bigger text and Smaller text are in More. Big files open fast: only the lines on screen are drawn, and a 52 MB log searches in a moment.</p>
+    <p>A file with the wrong name, like a picture saved as .bin, opens as what it really is, with a note. Anything Pure Peek cannot show opens as bytes.</p>
+
+    <h2>Find</h2>
+    <p>Find in this file works in text, code, tables and PDFs. Matches are marked, the current one stands out, and Previous match and Next match step through them. The count stops at 20,000 and shows 20,000+.</p>
+
+    <h2>Web pages and SVG</h2>
+    <p>HTML files and SVG drawings show inside the app with scripts off. Nothing outside the file is loaded, so a page cannot call home. Copy the source is in More.</p>
+
+    <h2>Zip, audio, video and fonts</h2>
+    <dl>
+      <dt>Zip</dt><dd>Walk the folders inside a zip and tap any file to open it, without unpacking the rest.</dd>
+      <dt>Audio and video</dt><dd>Play and pause, a seek bar, Back 10 seconds and On 10 seconds, speed, and Repeat. Audio shows its cover art and tags.</dd>
+      <dt>Fonts</dt><dd>A sample at every size and a box to try your own words.</dd>
+    </dl>
+
+    <h2>Settings</h2>
+    <dl>
+      <dt>Look</dt><dd>Follow the phone, Light, Graphite or True black. Follow the phone uses Light by day and True black at night.</dd>
+      <dt>Text and tables</dt><dd>Text size, wrap long lines, line numbers, and whether a table's first row holds the column names.</dd>
+      <dt>Privacy</dt><dd>Remember recent files. Turning it off forgets the list at once.</dd>
+      <dt>Opening files</dt><dd>Which app opens PDFs now, and how to make Pure Peek the one.</dd>
+      <dt>Widget</dt><dd>Open files, Open a folder and Photos in one tap on the home screen.</dd>
+      <dt>Help</dt><dd>This guide, the report page and the privacy policy.</dd>
+    </dl>
+
+    <h2>Accessibility</h2>
+    <p>Every control has a TalkBack label, touch targets are at least 48 dp, text grows with the phone's text size up to 200 percent, and text keeps a 7 to 1 contrast in every look.</p>
+
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>Guide text and images are shared under CC BY 4.0. The Pure Peek app itself is proprietary. Made by Marko Zanoski.</span>
+    <nav aria-label="Footer"><a href="https://play.google.com/store/apps/details?id=com.zanoshky.purepeek">Google Play</a><a href="https://purepeek.zanoski.com">purepeek.zanoski.com</a><a href="https://github.com/Zanoshky/pure-peek-app/issues">Issues</a><a href="https://purepeek.zanoski.com/privacy">Privacy</a></nav>
+  </div>
+</footer>
+</body>
+</html>

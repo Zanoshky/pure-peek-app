@@ -1,0 +1,104 @@
+name: Bug report
+description: A file in Pure Peek opens wrong, looks wrong, or the app crashes.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. One problem per report, please.
+        Before you attach a screenshot or a file, make sure it shows nothing private. Issues here are public.
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: "Settings in Pure Peek, at the bottom."
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone model
+      description: Android settings, About phone.
+      placeholder: Pixel 8
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version
+      description: Android settings, About phone, Android version.
+      placeholder: "15"
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: "Which screen or kind of file?"
+      options:
+        - home screen
+        - opening a file (Open with, Share, pickers)
+        - folder view
+        - photo
+        - PDF
+        - CSV or Excel table
+        - text, log or code
+        - JSON
+        - Markdown
+        - Word document
+        - web page or SVG
+        - zip
+        - audio or video
+        - font
+        - bytes view
+        - find
+        - About this file
+        - share or open with
+        - settings
+        - widget
+        - other
+    validations:
+      required: true
+  - type: input
+    id: file
+    attributes:
+      label: The file
+      description: Its name ending and size, like .pdf, 4 MB.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What you did, one step per line.
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshot, recording or sample file
+      description: Drag it in here. A sample file helps most, if it holds nothing private.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I searched the open issues and this is not there yet.
+          required: true
+        - label: My screenshots and files show nothing private.
+          required: true
