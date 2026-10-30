@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Guide · Pure Peek user guide</title>
-<meta name="description" content="How to use Pure Peek: opening files, photos, PDF, tables, text and code, web pages, zip, audio, video, fonts and settings.">
+<meta name="description" content="How to use Pure Peek: opening files, photos, PDF, tables, text and code, web pages, zip and tar, audio, video, fonts and settings.">
 <meta name="theme-color" content="#000000">
 <meta property="og:title" content="Guide · Pure Peek user guide">
-<meta property="og:description" content="How to use Pure Peek: opening files, photos, PDF, tables, text and code, web pages, zip, audio, video, fonts and settings.">
+<meta property="og:description" content="How to use Pure Peek: opening files, photos, PDF, tables, text and code, web pages, zip and tar, audio, video, fonts and settings.">
 <link rel="icon" href="img/icon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/inter-semibold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
@@ -58,9 +58,10 @@
     <p>Files say more than they show. A photo can hold where it was taken and which phone took it; a Word or Excel file names its author, who last saved it and the company; comments carry names; songs and videos carry tags, places and dates; and a camera file name like PXL_20261030_123456.jpg tells the second it was taken. More, Share a clean copy makes a copy with all of that taken out and hands it to the app you pick. What the file shows stays exactly the same: no new compression, the same pages, the same sound.</p>
     <ul>
       <li>Photos: JPEG, PNG, WebP, HEIC and AVIF lose GPS, camera, lens, dates, owner and serial fields, XMP, IPTC, comments and content credentials. A JPEG keeps its colour profile and which way up it goes, and an Ultra HDR photo keeps its HDR. A Motion Photo's video is cut off.</li>
-      <li>PDF: the copy is written fresh, with no author, creator, producer, dates, XMP or file ID, and no names on comments. A digital signature cannot stay valid in a changed file, so the copy leaves it out and says so.</li>
+      <li>PDF: the copy is written fresh, with no author, creator, producer, dates, XMP or file ID, and no names on comments, and photos placed in it lose their camera details. A digital signature cannot stay valid in a changed file, so the copy leaves it out and says so.</li>
       <li>Word, Excel and PowerPoint (and the LibreOffice formats): author, last saved by, company, manager and dates go, comment and change authors lose their names, and pictures inside are cleaned like photos.</li>
       <li>Songs and videos: MP3 and FLAC lose their tags and cover art; MP4, MOV, M4A and 3GP lose their place, tags and dates.</li>
+      <li>Zip: every photo, PDF, Office file, song and video inside is cleaned the same way, a zip inside it too, and their names lose their dates. Every file in the copy gets the same date, and the zip loses its comment. Other files go across unchanged; a file that cannot be cleaned is left out, and Pure Peek names it.</li>
       <li>The name: dates and times come out of it, and a camera name becomes photo, video or audio.</li>
     </ul>
     <p>Pro is optional: the app you bought is complete without it. It is one purchase through Google Play, with no subscription, and it unlocks every Pro extra that comes later. Get it from the Pro sheet that opens when you choose Share a clean copy, or from Settings, Pro, which also has Restore purchase for a new phone. Pure Peek's only permission is Google Play billing; it still has no internet permission, and the copy is made on the phone.</p>
@@ -78,9 +79,9 @@
     <h2>Web pages and SVG</h2>
     <p>HTML files and SVG drawings show inside the app with scripts off. Nothing outside the file is loaded, so a page cannot call home. Copy the source is in More.</p>
 
-    <h2>Zip, audio, video and fonts</h2>
+    <h2>Archives, audio, video and fonts</h2>
     <dl>
-      <dt>Zip</dt><dd>Walk the folders inside a zip and tap any file to open it, without unpacking the rest.</dd>
+      <dt>Zip and tar</dt><dd>Walk the folders inside a zip, tar, tar.gz or tgz and tap any file to open it, without unpacking the rest. A single .gz file, like a packed log, opens as the file inside. A tar has no table of contents, so a big tar.gz takes a moment to list.</dd>
       <dt>Audio and video</dt><dd>Play and pause, a seek bar, Back 10 seconds and On 10 seconds, speed, and Repeat. Audio shows its cover art and tags.</dd>
       <dt>Fonts</dt><dd>A sample at every size and a box to try your own words.</dd>
     </dl>
