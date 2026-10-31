@@ -70,7 +70,7 @@ page("index.html", "Home", "The user guide for Pure Peek, the offline file viewe
     </div>
 """)
 
-page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, tables, text and code, web pages, zip, audio, video, fonts and settings.", """
+page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, tables, text and code, web pages, zip and tar, audio, video, fonts and settings.", """
     <p class="kicker">Guide</p>
     <h1>How Pure Peek works</h1>
 
@@ -92,10 +92,27 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
 
     <h2>Photos</h2>
     <p>Photos open at full resolution, drawn in tiles, so zooming into a big photo stays sharp. Pinch to zoom, double tap for actual pixels, double tap again to fit. JPEG, PNG, WebP, HEIC, AVIF, GIF, DNG, BMP and more. Ultra HDR and wide colour photos show in full on screens that can.</p>
-    <p>About this file lists pixels, megapixels, colour space, camera, lens, exposure, ISO and when it was taken. More has Turn a quarter, Use as wallpaper or contact photo, and Share without location and camera details, which sends a copy with the GPS taken out and leaves the original alone.</p>
+    <p>About this file lists pixels, megapixels, colour space, camera, lens, exposure, ISO and when it was taken. More has Turn a quarter and Use as wallpaper or contact photo. With Pro, Share a clean copy sends a copy with the place and camera details taken out and leaves the original alone.</p>
 
     <h2>PDF</h2>
     <p>Pages render again at every zoom, so small print stays crisp. More has Go to page, First page, Last page, Copy the text of this page, Print, and on dark looks, Night pages, which shows PDFs as light text on dark. A PDF opens on the page you left it. A locked PDF asks for its password. On a tablet or a wide screen, a page strip sits beside the document.</p>
+
+    <h2>Sign a PDF or a photo</h2>
+    <p>Tap the pen in the bar, or More, Sign this PDF or Sign this photo. Choose a signature or draw a new one with your finger, in black or blue ink. On the next screen, drag the signature into place, drag its corner or pinch to change its size, or use Smaller and Bigger. With TalkBack, the signature has Move left, right, up and down actions. Turn pages with the arrows to sign another page. Sign makes a new signed copy: save it to your files, share it, or open it. The file you opened is never changed.</p>
+    <p>A PDF keeps everything it had: the signature is added on top as a new part of the file, so any digital signature already in it keeps covering what it covered. A photo is signed at full size and saved again as a JPEG, or as a PNG when it has see through parts, without its location and camera details.</p>
+    <p>Your signatures stay on this phone, inside Pure Peek. They are not backed up and do not move to a new phone. See and delete them in Settings, Signatures.</p>
+
+    <h2 id="clean">Share a clean copy (Pro)</h2>
+    <p>Files say more than they show. A photo can hold where it was taken and which phone took it; a Word or Excel file names its author, who last saved it and the company; comments carry names; songs and videos carry tags, places and dates; and a camera file name like PXL_20261030_123456.jpg tells the second it was taken. More, Share a clean copy makes a copy with all of that taken out and hands it to the app you pick. What the file shows stays exactly the same: no new compression, the same pages, the same sound.</p>
+    <ul>
+      <li>Photos: JPEG, PNG, WebP, HEIC and AVIF lose GPS, camera, lens, dates, owner and serial fields, XMP, IPTC, comments and content credentials. A JPEG keeps its colour profile and which way up it goes, and an Ultra HDR photo keeps its HDR. A Motion Photo's video is cut off.</li>
+      <li>PDF: the copy is written fresh, with no author, creator, producer, dates, XMP or file ID, and no names on comments, and photos placed in it lose their camera details. A digital signature cannot stay valid in a changed file, so the copy leaves it out and says so.</li>
+      <li>Word, Excel and PowerPoint (and the LibreOffice formats): author, last saved by, company, manager and dates go, comment and change authors lose their names, and pictures inside are cleaned like photos.</li>
+      <li>Songs and videos: MP3 and FLAC lose their tags and cover art; MP4, MOV, M4A and 3GP lose their place, tags and dates.</li>
+      <li>Zip: every photo, PDF, Office file, song and video inside is cleaned the same way, a zip inside it too, and their names lose their dates. Every file in the copy gets the same date, and the zip loses its comment. Other files go across unchanged; a file that cannot be cleaned is left out, and Pure Peek names it.</li>
+      <li>The name: dates and times come out of it, and a camera name becomes photo, video or audio.</li>
+    </ul>
+    <p>Pro is optional: the app you bought is complete without it. It is one purchase through Google Play, with no subscription, and it unlocks every Pro extra that comes later. Get it from the Pro sheet that opens when you choose Share a clean copy, or from Settings, Pro, which also has Restore purchase for a new phone. Pure Peek's only permission is Google Play billing; it still has no internet permission, and the copy is made on the phone.</p>
 
     <h2>Tables</h2>
     <p>CSV, TSV and Excel files open as tables with the header row and the row numbers pinned while you scroll. Tap a column name for Sort smallest to largest, Sort largest to smallest, Column stats (sum, average, smallest, largest, most common values) and Copy the column. Excel files with several sheets show a tab for each sheet. More has Copy as CSV for the whole table, and a switch for files whose first row is data, not names; Settings sets the default.</p>
@@ -110,18 +127,20 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
     <h2>Web pages and SVG</h2>
     <p>HTML files and SVG drawings show inside the app with scripts off. Nothing outside the file is loaded, so a page cannot call home. Copy the source is in More.</p>
 
-    <h2>Zip, audio, video and fonts</h2>
+    <h2>Archives, audio, video and fonts</h2>
     <dl>
-      <dt>Zip</dt><dd>Walk the folders inside a zip and tap any file to open it, without unpacking the rest.</dd>
+      <dt>Zip and tar</dt><dd>Walk the folders inside a zip, tar, tar.gz or tgz and tap any file to open it, without unpacking the rest. A single .gz file, like a packed log, opens as the file inside. A tar has no table of contents, so a big tar.gz takes a moment to list.</dd>
       <dt>Audio and video</dt><dd>Play and pause, a seek bar, Back 10 seconds and On 10 seconds, speed, and Repeat. Audio shows its cover art and tags.</dd>
       <dt>Fonts</dt><dd>A sample at every size and a box to try your own words.</dd>
     </dl>
 
     <h2>Settings</h2>
     <dl>
-      <dt>Look</dt><dd>Follow the phone, Light, Graphite or True black. Follow the phone uses Light by day and True black at night.</dd>
+      <dt>Look</dt><dd>Follow the phone, Pure Peek Default Light, Pure Peek Default Dark or Pure Peek Black. Follow the phone uses Default Light by day and Default Dark at night.</dd>
       <dt>Text and tables</dt><dd>Text size, wrap long lines, line numbers, and whether a table's first row holds the column names.</dd>
       <dt>Privacy</dt><dd>Remember recent files. Turning it off forgets the list at once.</dd>
+      <dt>Pro</dt><dd>What Pro adds, whether it is unlocked, and Restore purchase.</dd>
+      <dt>Signatures</dt><dd>Draw a new signature, and see or delete the ones you keep.</dd>
       <dt>Opening files</dt><dd>Which app opens PDFs now, and how to make Pure Peek the one.</dd>
       <dt>Widget</dt><dd>Open files, Open a folder and Photos in one tap on the home screen.</dd>
       <dt>Help</dt><dd>This guide, the report page and the privacy policy.</dd>
@@ -142,7 +161,7 @@ page("faq.html", "Questions", "Answers to common questions about Pure Peek, and 
     <p>No. Pure Peek only shows files and never changes or resaves them.</p>
 
     <h2>Why can I not see where a photo was taken?</h2>
-    <p>Android hides the place in a shared photo from apps that do not ask for the media location permission, and Pure Peek asks for no permissions. About this file says when a photo has a place that Android hid. Share without location still takes it out of the copy you send.</p>
+    <p>Android hides the place in a shared photo from apps that do not ask for the media location permission, and Pure Peek does not ask for it. About this file says when a photo has a place that Android hid. Share a clean copy (Pro) still takes it out of the copy you send.</p>
 
     <h2>How big a file can it open?</h2>
     <p>We tested a CSV of 500,000 rows (20 MB) and a 52 MB log. Both open, scroll and search.</p>
