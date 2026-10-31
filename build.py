@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Builds the guide pages and docs/style.css (css/tokens.css, then css/guide.css) from the bodies below.
 Run after any edit and commit docs/. Fails on any dash."""
+import re
 from pathlib import Path
 
 D = Path(__file__).parent / "docs"
@@ -59,7 +60,10 @@ def page(name, title, desc, body):
 </html>
 """
     (D / name).write_text(html)
-    (D / "style.css").write_text((Path(__file__).parent / "css/tokens.css").read_text() + "\n" + (Path(__file__).parent / "css/guide.css").read_text())
+    # Comments and runs of white space out, so the one render blocking file is as small as it can be.
+    css = (Path(__file__).parent / "css/tokens.css").read_text() + "\n" + (Path(__file__).parent / "css/guide.css").read_text()
+    css = re.sub(r" ?([{};]) ?", r"\1", re.sub(r"\s+", " ", re.sub(r"/\*.*?\*/", "", css, flags=re.S))).strip()
+    (D / "style.css").write_text(css + "\n")
     print(name)
 
 
