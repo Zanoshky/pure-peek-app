@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Builds the guide pages in docs/ from the bodies below. Run after any edit and commit docs/. Fails on any dash."""
+"""Builds the guide pages and docs/style.css (css/tokens.css, then css/guide.css) from the bodies below.
+Run after any edit and commit docs/. Fails on any dash."""
 from pathlib import Path
 
 D = Path(__file__).parent / "docs"
@@ -10,6 +11,9 @@ NAV = [("index.html", "Home"), ("guide.html", "Guide"), ("faq.html", "Questions"
 
 
 def page(name, title, desc, body):
+    feet = [(SITE + "/", "Home", None), ("index.html", "User guide", "index.html"), ("report.html", "Report a bug", "report.html"),
+            (SITE + "/privacy", "Privacy", None), (SITE + "/terms", "Terms", None)]
+    foot = "".join(f'<a href="{h}"{" aria-current=\"page\"" if p == name else ""}>{t}</a>' for h, p, t in [(h, p, t) for h, t, p in feet])
     nav = "".join(f'<a href="{h}"{" aria-current=\"page\"" if h == name else ""}>{t}</a>' for h, t in NAV)
     for bad in ("—", "–", " - "):
         if bad in body:
@@ -21,11 +25,13 @@ def page(name, title, desc, body):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{title} · Pure Peek user guide</title>
 <meta name="description" content="{desc}">
-<meta name="theme-color" content="#000000">
+<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="{title} · Pure Peek user guide">
 <meta property="og:description" content="{desc}">
 <link rel="icon" href="img/icon.svg" type="image/svg+xml">
-<link rel="preload" href="fonts/inter-semibold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/JetBrainsMono-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,6 +40,7 @@ def page(name, title, desc, body):
   <div class="wrap">
     <a class="brand" href="index.html"><img src="img/icon.svg" alt="" width="34" height="34"><span>Pure Peek</span></a>
     <nav aria-label="Guide pages">{nav}</nav>
+    <a class="key" href="{PLAY}">Get the app</a>
   </div>
 </header>
 <main id="main" class="page">
@@ -43,14 +50,16 @@ def page(name, title, desc, body):
 </main>
 <footer>
   <div class="wrap">
-    <span>Guide text and images are shared under CC BY 4.0. The Pure Peek app itself is proprietary. Made by Marko Zanoski.</span>
-    <nav aria-label="Footer"><a href="{PLAY}">Google Play</a><a href="{SITE}">purepeek.zanoski.com</a><a href="{REPO}/issues">Issues</a><a href="{SITE}/privacy">Privacy</a></nav>
+    <span>Pure Peek by <a href="https://zanoski.com">Marko Zanoski</a></span>
+    <nav aria-label="Footer">{foot}</nav>
+    <span class="lic">Guide text and images are shared under CC BY 4.0. The Pure Peek app itself is proprietary.</span>
   </div>
 </footer>
 </body>
 </html>
 """
     (D / name).write_text(html)
+    (D / "style.css").write_text((Path(__file__).parent / "css/tokens.css").read_text() + "\n" + (Path(__file__).parent / "css/guide.css").read_text())
     print(name)
 
 
@@ -59,14 +68,14 @@ page("index.html", "Home", "The user guide for Pure Peek, the offline file viewe
     <h1>Pure Peek</h1>
     <p class="lede">Open any file and see it properly: photos at full quality, PDF, CSV and Excel tables, code, logs, Markdown, Word, web pages, zip and more. Pay once, no ads, no internet permission.</p>
     <div class="shots">
-      <figure><img src="img/photo.webp" alt="A photo of Lake Bled open in Pure Peek." width="540" height="1200" fetchpriority="high"><figcaption>A photo</figcaption></figure>
-      <figure><img src="img/table.webp" alt="A CSV of expenses as a table with the header row and row numbers pinned." width="540" height="1200" loading="lazy"><figcaption>A CSV as a table</figcaption></figure>
-      <figure><img src="img/pdf.webp" alt="A trip plan PDF with a photo and a route table." width="540" height="1200" loading="lazy"><figcaption>A PDF</figcaption></figure>
-      <figure><img src="img/details.webp" alt="The details sheet of a photo: pixels, colour, camera and exposure." width="540" height="1200" loading="lazy"><figcaption>About this file</figcaption></figure>
+      <figure><img src="img/photo.webp" srcset="img/photo-270.webp 270w, img/photo.webp 540w" sizes="(max-width: 860px) 45vw, 260px" alt="A photo of Lake Bled open in Pure Peek." width="540" height="1200" fetchpriority="high"><figcaption>A photo</figcaption></figure>
+      <figure><img src="img/table.webp" srcset="img/table-270.webp 270w, img/table.webp 540w" sizes="(max-width: 860px) 45vw, 260px" alt="A CSV of expenses as a table with the header row and row numbers pinned." width="540" height="1200" loading="lazy"><figcaption>A CSV as a table</figcaption></figure>
+      <figure><img src="img/pdf.webp" srcset="img/pdf-270.webp 270w, img/pdf.webp 540w" sizes="(max-width: 860px) 45vw, 260px" alt="A trip plan PDF with a photo and a route table." width="540" height="1200" loading="lazy"><figcaption>A PDF</figcaption></figure>
+      <figure><img src="img/details.webp" srcset="img/details-270.webp 270w, img/details.webp 540w" sizes="(max-width: 860px) 45vw, 260px" alt="The details sheet of a photo: pixels, colour, camera and exposure." width="540" height="1200" loading="lazy"><figcaption>About this file</figcaption></figure>
     </div>
     <div class="cta">
       <a class="btn main" href="guide.html">Read the guide</a>
-      <a class="btn ghost" href="report.html">Report a bug or ask for a feature</a>
+      <a class="btn tonal" href="report.html">Report a bug or ask for a feature</a>
     </div>
 """)
 
@@ -201,8 +210,8 @@ page("report.html", "Report a bug", "How to report a Pure Peek bug or ask for a 
     <h1>Report a bug or ask for a feature</h1>
     <p>Found something broken, or have an idea? Tell us on GitHub. A free GitHub account is all you need.</p>
     <div class="grid">
-      <div class="card"><h2>Bug report</h2><p>A file opens wrong, looks wrong, or the app crashes.</p><p style="margin-top:16px"><a class="btn main" href="{REPO}/issues/new?template=bug_report.yml">Report a bug</a></p></div>
-      <div class="card"><h2>Feature request</h2><p>A kind of file or something you would like Pure Peek to do.</p><p style="margin-top:16px"><a class="btn ghost" href="{REPO}/issues/new?template=feature_request.yml">Ask for a feature</a></p></div>
+      <div class="card"><h2>Bug report</h2><p>A file opens wrong, looks wrong, or the app crashes.</p><a class="btn main" href="{REPO}/issues/new?template=bug_report.yml">Report a bug</a></div>
+      <div class="card"><h2>Feature request</h2><p>A kind of file or something you would like Pure Peek to do.</p><a class="btn tonal" href="{REPO}/issues/new?template=feature_request.yml">Ask for a feature</a></div>
     </div>
 
     <h2>Before you write</h2>
