@@ -4,7 +4,7 @@
 
 <h1 align="center">Pure Peek</h1>
 
-<p align="center">Open any file on Android and see it properly. Photos at full quality, PDF, CSV and Excel, code and more. Pay once, no ads, no internet.</p>
+<p align="center">Open any file on Android and see it properly. Photos at full quality, PDF, CSV and Excel, code and more. Free, no ads, no internet.</p>
 
 <p align="center">
   <a href="https://play.google.com/store/apps/details?id=com.zanoshky.purepeek"><b>Google Play</b></a> ·
@@ -17,7 +17,7 @@
   <img src="docs/img/table.webp" width="300" alt="A CSV of expenses open in Pure Peek as a table">
 </p>
 
-This repo is the public home for Pure Peek users: the user guide, bug reports and feature requests. The app itself is a paid Android app and its source is not here.
+This repo is the public home for Pure Peek users: the user guide, bug reports and feature requests. The app itself is a free Android app with an optional Pro, and its source is not here.
 
 ## Quick start
 
