@@ -95,7 +95,7 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
       <dt>Open files</dt><dd>On home, opens Android's file picker. Pick one file or many.</dd>
       <dt>Open a folder</dt><dd>Pick a folder once and see its files as a grid or a list, newest first or by name. Open one and step through the rest with Previous file and Next file.</dd>
       <dt>Photos</dt><dd>Opens Android's photo picker.</dd>
-      <dt>Recent files</dt><dd>Home lists what you opened lately. Turn this off in Settings, Privacy.</dd>
+      <dt>Recent files</dt><dd>Home lists what you opened lately, and Recent in the bottom bar lists them all. Turn this off in Settings, Opening files.</dd>
     </dl>
     <p>If another app always opens a kind of file, Settings, Opening files names it and takes you to its info page, where Open by default, Clear defaults hands the choice back.</p>
 
@@ -125,7 +125,7 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
       <li>Zip: every photo, PDF, Office file, song and video inside is cleaned the same way, a zip inside it too, and their names lose their dates. Every file in the copy gets the same date, and the zip loses its comment. Other files go across unchanged; a file that cannot be cleaned is left out, and Pure Peek names it.</li>
       <li>The name: dates and times come out of it, and a camera name becomes photo, video or audio.</li>
     </ul>
-    <p>Pro is optional: the app you bought is complete without it. It is one purchase through Google Play, with no subscription, and it unlocks every Pro extra that comes later. Get it from the Pro sheet that opens when you choose Share a clean copy, or from Settings, Pro, which also has Restore purchase for a new phone. Pure Peek still has no internet permission, and the copy is made on the phone.</p>
+    <p>Pro is optional: the app you bought is complete without it. It is one purchase through Google Play, with no subscription, and it unlocks every Pro extra that comes later. Get it from the Pro sheet that opens when you choose Share a clean copy, or from Pro in the bottom bar, which also has Restore purchase for a new phone. Pure Peek still has no internet permission, and the copy is made on the phone.</p>
 
     <h2>Tables</h2>
     <p>CSV, TSV and Excel files open as tables with the header row and the row numbers pinned while you scroll. Tap a column name for Sort smallest to largest, Sort largest to smallest, Column stats (sum, average, smallest, largest, most common values) and Copy the column. Excel files with several sheets show a tab for each sheet. More has Copy as CSV for the whole table, and a switch for files whose first row is data, not names; Settings sets the default.</p>
@@ -170,16 +170,17 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
     <p>One payment, yours for good. No subscription, no account. A control that needs Pro says (Pro) after its name and opens the Pro sheet.</p>
 
     <h2>Settings</h2>
+    <p>Settings is the last item of the bottom bar, after Home, Recent and Pro. Each row opens a small page; Back returns to Settings.</p>
     <dl>
       <dt>Look</dt><dd>Follow the phone, Default Light, Default Dark or Black. Follow the phone uses Default Light by day and Default Dark at night.</dd>
       <dt>Text and tables</dt><dd>Text size, wrap long lines, line numbers, and whether a table's first row holds the column names.</dd>
-      <dt>Opening files</dt><dd>Which app opens PDFs now, and how to make Pure Peek the one.</dd>
+      <dt>Opening files</dt><dd>Which app opens PDFs now, how to make Pure Peek the one, and Remember recent files; turning it off forgets the list at once.</dd>
       <dt>Signatures</dt><dd>Draw a new signature, and see or delete the ones you keep.</dd>
       <dt>Widget</dt><dd>Open files, Open a folder and Photos in one tap on the home screen.</dd>
-      <dt>Privacy</dt><dd>Remember recent files; turning it off forgets the list at once. Then the promises, and every permission Pure Peek has and why: Google Play billing for Pro, and the foreground service and media playback that let Read aloud (Pro) keep reading with the screen off.</dd>
-      <dt>Pro</dt><dd>What Pro adds, whether it is unlocked, and Restore purchase.</dd>
-      <dt>Help</dt><dd>This guide, the report page and the privacy policy.</dd>
-      <dt>Support the developer</dt><dd>A link to buy Marko a coffee, if Pure Peek helps you.</dd>
+      <dt>Privacy</dt><dd>The promises, every permission Pure Peek has and why: Google Play billing for Pro, and the foreground service and media playback that let Read aloud (Pro) keep reading with the screen off, what happens to your files, and the privacy policy.</dd>
+      <dt>Help and feedback</dt><dd>How to open files, this guide, the report page, the privacy policy and the credits.</dd>
+      <dt>Support the developer</dt><dd>If Pure Peek helps you, you can support it: Buy me a coffee opens Marko's page.</dd>
+      <dt>About</dt><dd>The version of Pure Peek you have.</dd>
     </dl>
 
     <h2>Accessibility</h2>
