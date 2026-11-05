@@ -21,7 +21,7 @@ This repo is the public home for Pure Peek users: the user guide, bug reports an
 
 ## Quick start
 
-1. Install Pure Peek from Google Play. It runs on Android 7 or newer.
+1. Install Pure Peek from Google Play. It runs on Android 10 or newer.
 2. Tap a file in Files, Gmail or Drive. When Android asks which app to use, pick Pure Peek and Always.
 3. Or open Pure Peek and tap Open files, Open a folder or Photos.
 
