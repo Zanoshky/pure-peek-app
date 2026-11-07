@@ -183,7 +183,7 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
       <dt>Widget</dt><dd>Open files, Open a folder and Photos in one tap on the home screen.</dd>
       <dt>Privacy</dt><dd>The promises, every permission Pure Peek has and why: Google Play billing for Pro, and the foreground service and media playback that let Read aloud (Pro) keep reading with the screen off, what happens to your files, and the privacy policy.</dd>
       <dt>Help and feedback</dt><dd>How to open files, this guide, the report page, the privacy policy and the credits.</dd>
-      <dt>Support the developer</dt><dd>If Pure Peek helps you, you can support it: Buy me a coffee opens Marko's page. Support And Live API is an optional subscription, 0.99 a month through Google Play, that pays for bug fixes and new file formats. It unlocks nothing. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time.</dd>
+      <dt>Support the developer</dt><dd>If Pure Peek helps you, you can support it: Buy me a coffee opens Marko's page. Insider is an optional subscription, 0.99 a month through Google Play, that pays for bug fixes and new file formats. Insiders get new features first, their requests read first, and an Insider mark in About. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time.</dd>
       <dt>About</dt><dd>The version of Pure Peek you have.</dd>
     </dl>
 
@@ -224,8 +224,8 @@ page("cookbook.html", "Cookbook", "Short Pure Peek recipes: open PDFs by default
     <ol><li>Open a text, Markdown, Word file, book or PDF.</li><li>More, Read aloud. It keeps reading with the screen off.</li></ol>
 
     <h2>Support Pure Peek monthly</h2>
-    <ol><li>Settings, Support the developer.</li><li>Tap Support And Live API. Google Play shows the price and how to cancel.</li></ol>
-    <p>Optional, and it unlocks nothing. Tap the row again to manage or cancel it.</p>
+    <ol><li>Settings, Support the developer.</li><li>Tap Insider. Google Play shows the price and how to cancel.</li></ol>
+    <p>Optional. Insiders get new features first and their requests read first. Tap the row again to manage or cancel it.</p>
 """)
 
 page("runbook.html", "Runbook", "When something in Pure Peek goes wrong: the Open with list, files opening as bytes, big archives, books that will not open, Pro and the subscription.", """
@@ -264,7 +264,7 @@ page("runbook.html", "Runbook", "When something in Pure Peek goes wrong: the Ope
     <ol><li>Sign in to Google Play with the account that bought it.</li><li>Open Pro in the bottom bar and tap Restore purchase.</li></ol>
 
     <h2>The subscription will not start</h2>
-    <p>Support And Live API runs through Google Play. With no account on the phone, an old Play Store, or a copy not from Google Play, it cannot start.</p>
+    <p>Insider runs through Google Play. With no account on the phone, an old Play Store, or a copy not from Google Play, it cannot start.</p>
     <ol><li>Open the Play Store once and check you are signed in.</li><li>Update Pure Peek and the Play Store, then try the row again.</li></ol>
     <p>To cancel: tap the same row, or Play Store, your profile, Payments and subscriptions.</p>
 """)
@@ -282,8 +282,8 @@ page("faq.html", "Questions", "Answers to common questions about Pure Peek, and 
     <h2>What is free and what is Pro?</h2>
     <p>Opening and viewing every file type is free and never needs Pro. The tools are Pro: signing PDFs and photos, sorting a table and its column stats, black out, privacy copies and the rest under <a href="guide.html#pro">What Pro adds</a>.</p>
 
-    <h2>What is Support And Live API?</h2>
-    <p>An optional subscription, 0.99 USD or EUR a month, for those who want to help more. It pays for bug fixes and new file formats. It unlocks nothing, and nothing is locked without it. Find it in Settings, under Support the developer. Cancel any time in Google Play.</p>
+    <h2>What is Insider?</h2>
+    <p>An optional subscription, 0.99 USD or EUR a month, for those who want to help more. It pays for bug fixes and new file formats. Insiders get new features before everyone else (each one opens to every user on a set date), their bug reports and ideas read first, and an Insider mark in About with their date. Nothing free or in Pro ever moves behind it. Find it in Settings, under Support the developer. Cancel any time in Google Play.</p>
 
     <h2>Why can I not see where a photo was taken?</h2>
     <p>Android hides the place in a shared photo from apps that do not ask for the media location permission, and Pure Peek does not ask for it. About this file says when a photo has a place that Android hid. Share a privacy copy (Pro) still takes it out of the copy you send.</p>
@@ -306,6 +306,13 @@ page("report.html", "Report a bug", "How to report a Pure Peek bug or ask for a 
       <div class="card"><h2>Bug report</h2><p>A file opens wrong, looks wrong, or the app crashes.</p><a class="btn main" href="{REPO}/issues/new?template=bug_report.yml">Report a bug</a></div>
       <div class="card"><h2>Feature request</h2><p>A kind of file or something you would like Pure Peek to do.</p><a class="btn tonal" href="{REPO}/issues/new?template=feature_request.yml">Ask for a feature</a></div>
     </div>
+    <p id="insider" hidden><b>Insider:</b> your request is read first. The title starts with [insider] so it stands out.</p>
+    <script>
+    document.addEventListener('DOMContentLoaded',function(){{if(!/[?&]insider=1(&|$)/.test(location.search))return;
+    var n=document.getElementById('insider');if(n)n.hidden=false;
+    document.querySelectorAll('a[href*="/issues/new"]').forEach(function(a){{var t=/feature_request/.test(a.href)?'[insider] [idea] ':'[insider] [bug] ';a.href+='&title='+encodeURIComponent(t)}});
+    document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){{a.href+=(a.href.indexOf('?')<0?'?':'&')+'subject='+encodeURIComponent('Insider: ')}})}});
+    </script>
 
     <h2>Before you write</h2>
     <ul>
