@@ -8,7 +8,7 @@ D = Path(__file__).parent / "docs"
 REPO = "https://github.com/Zanoshky/pure-peek-app"
 PLAY = "https://play.google.com/store/apps/details?id=com.zanoshky.purepeek"
 SITE = "https://purepeek.zanoski.com"
-NAV = [("index.html", "Home"), ("guide.html", "Guide"), ("faq.html", "Questions"), ("report.html", "Report a bug")]
+NAV = [("index.html", "Home"), ("guide.html", "Guide"), ("cookbook.html", "Cookbook"), ("runbook.html", "Runbook"), ("faq.html", "Questions"), ("report.html", "Report a bug")]
 
 
 def page(name, title, desc, body):
@@ -70,7 +70,8 @@ def page(name, title, desc, body):
 page("index.html", "Home", "The user guide for Pure Peek, the offline file viewer for Android.", f"""
     <p class="kicker">User guide</p>
     <h1>Pure Peek</h1>
-    <p class="lede">Open any file and see it properly: photos at full quality, PDF, CSV and Excel tables, code, logs, Markdown, Word, web pages, zip and more. Free, no ads, no internet permission. Opening and viewing every file type never needs Pro; the tools are Pro.</p>
+    <p class="lede">Open any file and see it properly: photos at full quality, PDF, CSV and Excel tables, code, logs, Markdown, Word, web pages, books, comics, zip, 7z, RAR and more. Free, no ads, no internet permission. Opening, viewing and reading every file type never needs Pro; the tools are Pro.</p>
+    <p><strong>In the next update:</strong> EPUB and FB2 books, CBZ, CBR and CB7 comics, Word files with their formatting, and 7z, RAR and locked zips free to open. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
     <div class="shots">
       <figure><img src="img/photo.webp" srcset="img/photo-270.webp 270w, img/photo.webp 540w" sizes="(max-width: 860px) 45vw, 260px" alt="A photo of Lake Bled open in Pure Peek." width="540" height="1200" fetchpriority="high"><figcaption>A photo</figcaption></figure>
       <figure><img src="img/table.webp" srcset="img/table-270.webp 270w, img/table.webp 540w" sizes="(max-width: 860px) 45vw, 260px" alt="A CSV of expenses as a table with the header row and row numbers pinned." width="540" height="1200" loading="lazy"><figcaption>A CSV as a table</figcaption></figure>
@@ -131,7 +132,7 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
     <p>CSV, TSV and Excel files open as tables with the header row and the row numbers pinned while you scroll. Tap a column name for Copy the column, and with Pro, Sort smallest to largest, Sort largest to smallest and Column stats (sum, average, smallest, largest, most common values). Excel files with several sheets show a tab for each sheet. More has Copy as CSV for the whole table, and a switch for files whose first row is data, not names; Settings sets the default.</p>
 
     <h2>Text, code and documents</h2>
-    <p>Text, logs and code open with line numbers and wrap; both can be turned off in Settings. JSON has As saved and Tidy tabs, Markdown has Formatted and Source, and Word documents open as clean text. Bigger text and Smaller text are in More. Big files open fast: only the lines on screen are drawn, and a 52 MB log searches in a moment.</p>
+    <p>Text, logs and code open with line numbers and wrap; both can be turned off in Settings. JSON has As saved and Tidy tabs, Markdown has Formatted and Source, and Word documents open with their formatting: headings, lists, tables, pictures and footnotes, flowing like a book. Bigger text and Smaller text are in More. Big files open fast: only the lines on screen are drawn, and a 52 MB log searches in a moment.</p>
     <p>A file with the wrong name, like a picture saved as .bin, opens as what it really is, with a note. Anything Pure Peek cannot show opens as bytes.</p>
 
     <h2>Find</h2>
@@ -142,10 +143,14 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
 
     <h2>Archives, audio, video and fonts</h2>
     <dl>
-      <dt>Zip and tar</dt><dd>Walk the folders inside a zip, tar, tar.gz or tgz and tap any file to open it, without unpacking the rest. A single .gz file, like a packed log, opens as the file inside. A tar has no table of contents, so a big tar.gz takes a moment to list.</dd>
+      <dt>Zip, tar, 7z and RAR</dt><dd>Walk the folders inside a zip, tar, tar.gz, tgz, 7z or RAR, or a zip locked with a password, and tap any file to open it, without unpacking the rest. Opening any file inside is free, locked ones too. A single .gz file, like a packed log, opens as the file inside. A tar has no table of contents, so a big tar.gz takes a moment to list. A big archive from shared storage is copied inside Pure Peek before it opens, which takes a moment.</dd>
       <dt>Audio and video</dt><dd>Play and pause, a seek bar, Back 10 seconds and On 10 seconds, speed, and Repeat. Audio shows its cover art and tags.</dd>
       <dt>Fonts</dt><dd>A sample at every size and a box to try your own words.</dd>
     </dl>
+
+    <h2 id="books">Books and comics</h2>
+    <p>EPUB and FB2 books open as a flowing page, one chapter at a time. Swipe or tap either side to turn the page, or scroll. Contents lists the chapters, and Previous chapter and Next chapter step through them. Pure Peek keeps your text size, night pages and your place in each book. Links inside the book work; a link to the web asks first. Books with DRM, MOBI and AZW3 do not open.</p>
+    <p>CBZ, CBR and CB7 comics show their pictures as pages, in name order, swiped like photos. Past the last page the swipe goes on to the next file in the folder. Reading books and comics is free; Read aloud is Pro.</p>
 
     <h2 id="pro">What Pro adds</h2>
     <p>Opening and viewing every file type never needs Pro. The tools are Pro: signing, sorting a table and column stats, and everything below. Everything is made on this phone, and the files you pick are never changed.</p>
@@ -157,7 +162,6 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
       <li>Compare two files line by line</li>
       <li>Privacy copies with the place, camera, author, dates and other details about you taken out, one file or many at once</li>
       <li>Sort a table and see column totals and averages</li>
-      <li>Unpack files from 7z and RAR archives and from zips locked with a password</li>
       <li>Make a PDF smaller to a size you pick, and shrink photos for email</li>
       <li>Lock a copy of a PDF with a password, or make a copy without one</li>
       <li>Find and black out words, phone numbers, IBANs and email addresses</li>
@@ -179,12 +183,90 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
       <dt>Widget</dt><dd>Open files, Open a folder and Photos in one tap on the home screen.</dd>
       <dt>Privacy</dt><dd>The promises, every permission Pure Peek has and why: Google Play billing for Pro, and the foreground service and media playback that let Read aloud (Pro) keep reading with the screen off, what happens to your files, and the privacy policy.</dd>
       <dt>Help and feedback</dt><dd>How to open files, this guide, the report page, the privacy policy and the credits.</dd>
-      <dt>Support the developer</dt><dd>If Pure Peek helps you, you can support it: Buy me a coffee opens Marko's page.</dd>
+      <dt>Support the developer</dt><dd>If Pure Peek helps you, you can support it: Buy me a coffee opens Marko's page. Support And Live API is an optional subscription, 0.99 a month through Google Play, that pays for bug fixes and new file formats. It unlocks nothing. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time.</dd>
       <dt>About</dt><dd>The version of Pure Peek you have.</dd>
     </dl>
 
     <h2>Accessibility</h2>
     <p>Every control has a TalkBack label, touch targets are at least 48 dp, text grows with the phone's text size up to 200 percent, and text keeps a 7 to 1 contrast in every look.</p>
+""")
+
+page("cookbook.html", "Cookbook", "Short Pure Peek recipes: open PDFs by default, read a book or a comic, look inside a RAR, privacy copies, signing, black out and more.", """
+    <p class="kicker">Cookbook</p>
+    <h1>Short recipes</h1>
+    <p>A few taps each. Recipes marked Pro need Pro; the rest are free.</p>
+
+    <h2>Open every PDF in Pure Peek</h2>
+    <ol><li>Tap a PDF in Files, Gmail or Downloads.</li><li>When Android asks, pick Pure Peek, then Always.</li><li>Another app took it? Settings, Opening files names it; open its info page and Clear defaults.</li></ol>
+
+    <h2>Read a book</h2>
+    <ol><li>Open an EPUB or FB2 file with Pure Peek.</li><li>Swipe or tap the sides to turn pages. Contents jumps to a chapter.</li><li>Close it any time. It opens again on the same page.</li></ol>
+
+    <h2>Read a comic</h2>
+    <ol><li>Open Pure Peek, Open a folder, and pick the folder with your CBZ or CBR files.</li><li>Open the first one and swipe. After the last page, the next comic starts.</li></ol>
+
+    <h2>Look inside a RAR or a 7z</h2>
+    <ol><li>Open the archive with Pure Peek.</li><li>Walk its folders and tap a file to see it.</li><li>Locked? Tap Type the password; even a locked 7z opens for free.</li></ol>
+
+    <h2>Send a photo without the place (Pro)</h2>
+    <ol><li>Open the photo, then More, Share a privacy copy.</li><li>Pick the app to send it with. Your photo is left as it was.</li></ol>
+
+    <h2>Sign a PDF (Pro)</h2>
+    <ol><li>Open the PDF and tap the pen, or More, Sign this PDF.</li><li>Pick or draw a signature, drag it into place, then Sign.</li><li>Save, share or open the signed copy.</li></ol>
+
+    <h2>Black out a phone number (Pro)</h2>
+    <ol><li>Open the PDF or photo, then More, Find and black out.</li><li>Pick phone numbers, or type the words to find.</li><li>Check the boxes and save the copy. What was under them is gone.</li></ol>
+
+    <h2>Get the text out of a scan (Pro)</h2>
+    <ol><li>Open the photo or scanned PDF.</li><li>More, Read the text in this photo, or Read the text in this page (for scans).</li><li>Copy it. It is read on the phone, with no internet.</li></ol>
+
+    <h2>Listen to a document (Pro)</h2>
+    <ol><li>Open a text, Markdown, Word file, book or PDF.</li><li>More, Read aloud. It keeps reading with the screen off.</li></ol>
+
+    <h2>Support Pure Peek monthly</h2>
+    <ol><li>Settings, Support the developer.</li><li>Tap Support And Live API. Google Play shows the price and how to cancel.</li></ol>
+    <p>Optional, and it unlocks nothing. Tap the row again to manage or cancel it.</p>
+""")
+
+page("runbook.html", "Runbook", "When something in Pure Peek goes wrong: the Open with list, files opening as bytes, big archives, books that will not open, Pro and the subscription.", """
+    <p class="kicker">Runbook</p>
+    <h1>When something goes wrong</h1>
+    <p>What you see, why it happens, and what fixes it. More answers are in the <a href="faq.html">questions</a>.</p>
+
+    <h2>Pure Peek is not in Open with</h2>
+    <p>Another app is set to always open that kind of file, so Android does not ask.</p>
+    <ol><li>Settings, Opening files in Pure Peek names the app.</li><li>Open its info page, Open by default, Clear defaults.</li><li>Tap the file again and pick Pure Peek, Always.</li></ol>
+
+    <h2>A file opens as bytes</h2>
+    <p>Pure Peek does not know the format, or the file is damaged. It still shows the size and the checksum.</p>
+    <ol><li>Check the name ending: a file with the wrong ending opens as what it really is, with a note.</li><li>Report it with the kind of file, and a sample if it holds nothing private.</li></ol>
+
+    <h2>A book will not open</h2>
+    <p>Books with DRM, and MOBI and AZW3 files, cannot be read. An EPUB without its list of contents cannot either.</p>
+    <ol><li>Get a DRM free EPUB from the shop, or convert the book on a computer.</li></ol>
+
+    <h2>A big archive is slow to open</h2>
+    <p>A 7z, a RAR or a locked zip has to be read from a real file. One from shared storage is copied inside Pure Peek first.</p>
+    <ol><li>Wait for the copy; it happens once each time you open it.</li></ol>
+
+    <h2>A RAR or comic says it is locked</h2>
+    <p>Some RAR files hide even their file names behind a password, and a locked comic does not ask for one.</p>
+    <ol><li>Unpack it on a computer, or ask the sender for a version without a password.</li></ol>
+
+    <h2>A photo shows no place</h2>
+    <p>Android hides the place from apps without the media location permission, and Pure Peek does not ask for it. About this file says when this happened.</p>
+
+    <h2>Read aloud stops</h2>
+    <p>Read aloud uses the phone's voice engine. A PDF needs Android 15 or newer for its page text.</p>
+    <ol><li>Android settings, Text to speech: check a voice is installed and try Play there.</li></ol>
+
+    <h2>Pro is missing on a new phone</h2>
+    <ol><li>Sign in to Google Play with the account that bought it.</li><li>Open Pro in the bottom bar and tap Restore purchase.</li></ol>
+
+    <h2>The subscription will not start</h2>
+    <p>Support And Live API runs through Google Play. With no account on the phone, an old Play Store, or a copy not from Google Play, it cannot start.</p>
+    <ol><li>Open the Play Store once and check you are signed in.</li><li>Update Pure Peek and the Play Store, then try the row again.</li></ol>
+    <p>To cancel: tap the same row, or Play Store, your profile, Payments and subscriptions.</p>
 """)
 
 page("faq.html", "Questions", "Answers to common questions about Pure Peek, and what to try when something does not work.", f"""

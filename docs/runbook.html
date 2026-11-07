@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Runbook · Pure Peek user guide</title>
+<meta name="description" content="When something in Pure Peek goes wrong: the Open with list, files opening as bytes, big archives, books that will not open, Pro and the subscription.">
+<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Runbook · Pure Peek user guide">
+<meta property="og:description" content="When something in Pure Peek goes wrong: the Open with list, files opening as bytes, big archives, books that will not open, Pro and the subscription.">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/JetBrainsMono-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/icon.svg" alt="" width="34" height="34"><span>Pure Peek</span></a>
+    <nav aria-label="Guide pages"><a href="index.html">Home</a><a href="guide.html">Guide</a><a href="cookbook.html">Cookbook</a><a href="runbook.html" aria-current="page">Runbook</a><a href="faq.html">Questions</a><a href="report.html">Report a bug</a></nav>
+    <a class="key" href="https://play.google.com/store/apps/details?id=com.zanoshky.purepeek">Get the app</a>
+  </div>
+</header>
+<main id="main" class="page">
+  <div class="wrap">
+
+    <p class="kicker">Runbook</p>
+    <h1>When something goes wrong</h1>
+    <p>What you see, why it happens, and what fixes it. More answers are in the <a href="faq.html">questions</a>.</p>
+
+    <h2>Pure Peek is not in Open with</h2>
+    <p>Another app is set to always open that kind of file, so Android does not ask.</p>
+    <ol><li>Settings, Opening files in Pure Peek names the app.</li><li>Open its info page, Open by default, Clear defaults.</li><li>Tap the file again and pick Pure Peek, Always.</li></ol>
+
+    <h2>A file opens as bytes</h2>
+    <p>Pure Peek does not know the format, or the file is damaged. It still shows the size and the checksum.</p>
+    <ol><li>Check the name ending: a file with the wrong ending opens as what it really is, with a note.</li><li>Report it with the kind of file, and a sample if it holds nothing private.</li></ol>
+
+    <h2>A book will not open</h2>
+    <p>Books with DRM, and MOBI and AZW3 files, cannot be read. An EPUB without its list of contents cannot either.</p>
+    <ol><li>Get a DRM free EPUB from the shop, or convert the book on a computer.</li></ol>
+
+    <h2>A big archive is slow to open</h2>
+    <p>A 7z, a RAR or a locked zip has to be read from a real file. One from shared storage is copied inside Pure Peek first.</p>
+    <ol><li>Wait for the copy; it happens once each time you open it.</li></ol>
+
+    <h2>A RAR or comic says it is locked</h2>
+    <p>Some RAR files hide even their file names behind a password, and a locked comic does not ask for one.</p>
+    <ol><li>Unpack it on a computer, or ask the sender for a version without a password.</li></ol>
+
+    <h2>A photo shows no place</h2>
+    <p>Android hides the place from apps without the media location permission, and Pure Peek does not ask for it. About this file says when this happened.</p>
+
+    <h2>Read aloud stops</h2>
+    <p>Read aloud uses the phone's voice engine. A PDF needs Android 15 or newer for its page text.</p>
+    <ol><li>Android settings, Text to speech: check a voice is installed and try Play there.</li></ol>
+
+    <h2>Pro is missing on a new phone</h2>
+    <ol><li>Sign in to Google Play with the account that bought it.</li><li>Open Pro in the bottom bar and tap Restore purchase.</li></ol>
+
+    <h2>The subscription will not start</h2>
+    <p>Support And Live API runs through Google Play. With no account on the phone, an old Play Store, or a copy not from Google Play, it cannot start.</p>
+    <ol><li>Open the Play Store once and check you are signed in.</li><li>Update Pure Peek and the Play Store, then try the row again.</li></ol>
+    <p>To cancel: tap the same row, or Play Store, your profile, Payments and subscriptions.</p>
+
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>Pure Peek by <a href="https://zanoski.com">Marko Zanoski</a></span>
+    <nav aria-label="Footer"><a href="https://purepeek.zanoski.com/">Home</a><a href="index.html">User guide</a><a href="report.html">Report a bug</a><a href="https://purepeek.zanoski.com/privacy">Privacy</a><a href="https://purepeek.zanoski.com/terms">Terms</a></nav>
+    <span class="lic">Guide text and images are shared under CC BY 4.0. The Pure Peek app itself is proprietary.</span>
+  </div>
+</footer>
+</body>
+</html>
