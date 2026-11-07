@@ -183,7 +183,7 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
       <dt>Widget</dt><dd>Open files, Open a folder and Photos in one tap on the home screen.</dd>
       <dt>Privacy</dt><dd>The promises, every permission Pure Peek has and why: Google Play billing for Pro, and the foreground service and media playback that let Read aloud (Pro) keep reading with the screen off, what happens to your files, and the privacy policy.</dd>
       <dt>Help and feedback</dt><dd>How to open files, this guide, the report page, the privacy policy and the credits.</dd>
-      <dt>Support the developer</dt><dd>If Pure Peek helps you, you can support it: Buy me a coffee opens Marko's page. Insider is an optional subscription, 0.99 a month through Google Play, that pays for bug fixes and new file formats. Insiders get new features first, their requests read first, and an Insider mark in About. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time.</dd>
+      <dt>Support the developer</dt><dd>If Pure Peek helps you, you can support it. Insider is an optional subscription, 0.99 a month through Google Play, that pays for bug fixes and new file formats. Insiders get new features first, their requests read first, and an Insider mark in About. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time.</dd>
       <dt>About</dt><dd>The version of Pure Peek you have.</dd>
     </dl>
 
