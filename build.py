@@ -71,7 +71,7 @@ page("index.html", "Home", "The user guide for Pure Peek, the offline file viewe
     <p class="kicker">User guide</p>
     <h1>Pure Peek</h1>
     <p class="lede">Open any file and see it properly: photos at full quality, PDF, CSV and Excel tables, code, logs, Markdown, Word, web pages, books, comics, zip, 7z, RAR and more. Free, no ads, no internet permission. Opening, viewing and reading every file type never needs Pro; the tools are Pro.</p>
-    <p><strong>New in 1.5.16:</strong> EPUB and FB2 books, CBZ, CBR and CB7 comics, Word files with their formatting, and 7z, RAR and locked zips free to open. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
+    <p><strong>New in 1.12:</strong> Pure Peek in 12 more languages, text in Greek, Cyrillic and Vietnamese in the app's own fonts, updates that arrive inside the app, Settings and Recent that keep your place, lighter big files, and Insider, an optional monthly way to support it. Since 1.5.16: EPUB and FB2 books, CBZ, CBR and CB7 comics, Word files with their formatting, and 7z, RAR and locked zips free to open. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
     <div class="shots">
       <figure><img src="img/photo.webp" srcset="img/photo-270.webp 270w, img/photo.webp 540w" sizes="(max-width: 860px) 45vw, 260px" alt="A photo of Lake Bled open in Pure Peek." width="540" height="1200" fetchpriority="high"><figcaption>A photo</figcaption></figure>
       <figure><img src="img/table.webp" srcset="img/table-270.webp 270w, img/table.webp 540w" sizes="(max-width: 860px) 45vw, 260px" alt="A CSV of expenses as a table with the header row and row numbers pinned." width="540" height="1200" loading="lazy"><figcaption>A CSV as a table</figcaption></figure>
@@ -96,7 +96,7 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
       <dt>Open files</dt><dd>On home, opens Android's file picker. Pick one file or many.</dd>
       <dt>Open a folder</dt><dd>Pick a folder once and see its files as a grid or a list, newest first or by name. Open one and step through the rest with Previous file and Next file.</dd>
       <dt>Photos</dt><dd>Opens Android's photo picker.</dd>
-      <dt>Recent files</dt><dd>Home lists what you opened lately, and Recent in the bottom bar lists them all. Turn this off in Settings, Opening files.</dd>
+      <dt>Recent files</dt><dd>Home lists what you opened lately, and Recent in the bottom bar lists them all, and keeps your place when you come back to it. Turn this off in Settings, Opening files.</dd>
     </dl>
     <p>If another app always opens a kind of file, Settings, Opening files names it and takes you to its info page, where Open by default, Clear defaults hands the choice back.</p>
 
@@ -126,7 +126,7 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
       <li>Zip: every photo, PDF, Office file, song and video inside is cleaned the same way, a zip inside it too, and their names lose their dates. Every file in the copy gets the same date, and the zip loses its comment. Other files go across unchanged; a file that cannot be cleaned is left out, and Pure Peek names it.</li>
       <li>The name: dates and times come out of it, and a camera name becomes photo, video or audio.</li>
     </ul>
-    <p>Pro is optional: opening and viewing every file type never needs it. It is one purchase through Google Play, with no subscription, and it unlocks every Pro extra that comes later. Get it from the Pro sheet that opens when you choose Share a privacy copy or any other Pro tool, or from Pro in the bottom bar, which also has Restore purchase for a new phone. Pure Peek still has no internet permission, and the copy is made on the phone.</p>
+    <p>Pro is optional: opening and viewing every file type never needs it. It is one purchase through Google Play, with no subscription, and it unlocks every Pro extra that comes later. Get it from the Pro sheet that opens when you choose Share a privacy copy or any other Pro tool, or from Settings, Pro, See what Pro adds, which also has Restore purchase for a new phone. Pro is sold only in the copy from Google Play; a copy from anywhere else opens every file just the same. Pure Peek still has no internet permission, and the copy is made on the phone.</p>
 
     <h2>Tables</h2>
     <p>CSV, TSV and Excel files open as tables with the header row and the row numbers pinned while you scroll. Tap a column name for Copy the column, and with Pro, Sort smallest to largest, Sort largest to smallest and Column stats (sum, average, smallest, largest, most common values). Excel files with several sheets show a tab for each sheet. More has Copy as CSV for the whole table, and a switch for files whose first row is data, not names; Settings sets the default.</p>
@@ -174,18 +174,27 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
     <p>One payment, yours for good. No subscription, no account. A control that needs Pro says (Pro) after its name and opens the Pro sheet.</p>
 
     <h2>Settings</h2>
-    <p>Settings is the last item of the bottom bar, after Home, Recent and Pro. Each row opens a small page; Back returns to Settings.</p>
+    <p>Settings is the last item of the bottom bar, after Home and Recent. Each row opens a small page; Back returns to Settings, at the place you left it.</p>
     <dl>
       <dt>Look</dt><dd>Follow the phone, Default Light, Default Dark or Black. Follow the phone uses Default Light by day and Default Dark at night.</dd>
       <dt>Text and tables</dt><dd>Text size, wrap long lines, line numbers, and whether a table's first row holds the column names.</dd>
-      <dt>Opening files</dt><dd>Which app opens PDFs now, how to make Pure Peek the one, and Remember recent files; turning it off forgets the list at once.</dd>
+      <dt>Books, sound and Read aloud</dt><dd>Book text size, Turn pages in books, Night pages, Play again from the start for video and audio, and the speed and voice of Read aloud (Pro).</dd>
+      <dt>Opening files</dt><dd>Which app opens PDFs now, how to make Pure Peek the one, folders as a grid or a list and newest first or by name, and Remember recent files; turning it off forgets the list at once.</dd>
       <dt>Signatures</dt><dd>Draw a new signature, and see or delete the ones you keep. Signing with them is part of Pro.</dd>
       <dt>Widget</dt><dd>Open files, Open a folder and Photos in one tap on the home screen.</dd>
       <dt>Privacy</dt><dd>The promises, every permission Pure Peek has and why: Google Play billing for Pro, and the foreground service and media playback that let Read aloud (Pro) keep reading with the screen off, what happens to your files, and the privacy policy.</dd>
+      <dt>Pro</dt><dd>See what Pro adds, buy it once, or Restore purchase.</dd>
       <dt>Help and feedback</dt><dd>How to open files, this guide, the report page, the privacy policy and the credits.</dd>
       <dt>Support the developer</dt><dd>If Pure Peek helps you, you can support it. Insider is an optional subscription, 0.99 a month through Google Play, that pays for bug fixes and new file formats. Insiders get new features first, their requests read first, and an Insider mark in About. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time.</dd>
-      <dt>About</dt><dd>The version of Pure Peek you have.</dd>
+      <dt>More apps</dt><dd>The other apps from Zanoshky.</dd>
+      <dt>About</dt><dd>The version of Pure Peek you have, and the Insider mark with its month for an Insider.</dd>
     </dl>
+
+    <h2 id="updates">Updates</h2>
+    <p>When Google Play has a new version, Pure Peek can fetch it while you keep reading. A bar above the bottom bar then says a new version is ready; tap Restart to use it. It takes a moment.</p>
+
+    <h2>Languages</h2>
+    <p>Pure Peek speaks English, German, Spanish, French, Portuguese, Russian, Turkish, Hindi, Indonesian, Japanese and Korean, and since 1.12 also Italian, Dutch, Polish, Czech, Swedish, Romanian, Hungarian, Greek, Ukrainian, Vietnamese, Thai and Chinese. It follows the phone's language, and Greek, Cyrillic and Vietnamese text shows in the app's own fonts.</p>
 
     <h2>Accessibility</h2>
     <p>Every control has a TalkBack label, touch targets are at least 48 dp, text grows with the phone's text size up to 200 percent, and text keeps a 7 to 1 contrast in every look.</p>
@@ -261,7 +270,15 @@ page("runbook.html", "Runbook", "When something in Pure Peek goes wrong: the Ope
     <ol><li>Android settings, Text to speech: check a voice is installed and try Play there.</li></ol>
 
     <h2>Pro is missing on a new phone</h2>
-    <ol><li>Sign in to Google Play with the account that bought it.</li><li>Open Pro in the bottom bar and tap Restore purchase.</li></ol>
+    <ol><li>Sign in to Google Play with the account that bought it.</li><li>Settings, Pro, See what Pro adds, then Restore purchase.</li></ol>
+
+    <h2>Pro says it needs the Google Play version</h2>
+    <p>Pro is sold only in the copy of Pure Peek from Google Play. A copy from anywhere else opens every file, but cannot sell Pro.</p>
+    <ol><li>Install Pure Peek from Google Play, then buy Pro or Restore purchase there.</li></ol>
+
+    <h2>A bar says a new version is ready</h2>
+    <p>Google Play fetched an update while you used the app.</p>
+    <ol><li>Tap Restart. Pure Peek closes and opens again on the new version.</li></ol>
 
     <h2>The subscription will not start</h2>
     <p>Insider runs through Google Play. With no account on the phone, an old Play Store, or a copy not from Google Play, it cannot start.</p>
