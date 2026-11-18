@@ -6,7 +6,7 @@ from pathlib import Path
 
 D = Path(__file__).parent / "docs"
 REPO = "https://github.com/Zanoshky/pure-peek-app"
-PLAY = "https://play.google.com/store/apps/details?id=com.zanoshky.purepeek"
+PLAY = "https://play.google.com/store/apps/details?id=com.zanoshky.purepeek&amp;referrer=utm_source%3Dpurepeek-guide%26utm_medium%3Dgithub%26utm_campaign%3Dpure-peek-2026-11"
 SITE = "https://purepeek.zanoski.com"
 NAV = [("index.html", "Home"), ("guide.html", "Guide"), ("cookbook.html", "Cookbook"), ("runbook.html", "Runbook"), ("faq.html", "Questions"), ("report.html", "Report a bug")]
 
@@ -126,7 +126,7 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
       <li>Zip: every photo, PDF, Office file, song and video inside is cleaned the same way, a zip inside it too, and their names lose their dates. Every file in the copy gets the same date, and the zip loses its comment. Other files go across unchanged; a file that cannot be cleaned is left out, and Pure Peek names it.</li>
       <li>The name: dates and times come out of it, and a camera name becomes photo, video or audio.</li>
     </ul>
-    <p>Pro is optional: opening and viewing every file type never needs it. It is one purchase through Google Play, with no subscription, and it unlocks every Pro extra that comes later. Get it from the Pro sheet that opens when you choose Share a privacy copy or any other Pro tool, or from Settings, Pro, See what Pro adds, which also has Restore purchase for a new phone. Pro is sold only in the copy from Google Play; a copy from anywhere else opens every file just the same. Pure Peek still has no internet permission, and the copy is made on the phone.</p>
+    <p>Pro is optional: opening and viewing every file type never needs it. It is one optional purchase through Google Play, and it unlocks every Pro extra that comes later. Get it from the Pro sheet that opens when you choose Share a privacy copy or any other Pro tool, or from Settings, Pro, See what Pro adds, which also has Restore purchase for a new phone. Pro is sold only in the copy from Google Play; a copy from anywhere else opens every file just the same. Pure Peek still has no internet permission, and the copy is made on the phone.</p>
 
     <h2>Tables</h2>
     <p>CSV, TSV and Excel files open as tables with the header row and the row numbers pinned while you scroll. Tap a column name for Copy the column, and with Pro, Sort smallest to largest, Sort largest to smallest and Column stats (sum, average, smallest, largest, most common values). Excel files with several sheets show a tab for each sheet. More has Copy as CSV for the whole table, and a switch for files whose first row is data, not names; Settings sets the default.</p>
@@ -171,7 +171,7 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
       <li>Read text, Markdown, Word and PDF text aloud, also with the screen off</li>
       <li>Read the text in photos and scans, on the phone with no internet</li>
     </ul>
-    <p>One payment, yours for good. No subscription, no account. A control that needs Pro says (Pro) after its name and opens the Pro sheet.</p>
+    <p>One payment, yours for good. No account. A control that needs Pro says (Pro) after its name and opens the Pro sheet.</p>
 
     <h2>Settings</h2>
     <p>Settings is the last item of the bottom bar, after Home and Recent. Each row opens a small page; Back returns to Settings, at the place you left it.</p>
