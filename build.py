@@ -71,7 +71,8 @@ page("index.html", "Home", "The user guide for Pure Peek, the offline file viewe
     <p class="kicker">User guide</p>
     <h1>Pure Peek</h1>
     <p class="lede">Open any file and see it properly: photos at full quality, PDF, CSV and Excel tables, code, logs, Markdown, Word, web pages, books, comics, zip, 7z, RAR and more. Free, no ads, no internet permission. Opening, viewing and reading every file type never needs Pro; the tools are Pro.</p>
-    <p><strong>New in 1.12:</strong> Pure Peek in 12 more languages, text in Greek, Cyrillic and Vietnamese in the app's own fonts, updates that arrive inside the app, Settings and Recent that keep your place, lighter big files, and Insider, an optional monthly way to support it. Since 1.5.16: EPUB and FB2 books, CBZ, CBR and CB7 comics, Word files with their formatting, and 7z, RAR and locked zips free to open. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
+    <p><strong>New in 1.20:</strong> Pure Peek opens OpenDocument files (text, spreadsheets and presentations), PowerPoint and Rich Text (RTF) files, with a card for each slide. Password and signing screens stay out of screenshots, big files use less memory, and a Pro payment that is pending unlocks once it clears. Back and the page title share one row, and text size and speed no longer open popups.</p>
+    <p><strong>Since 1.12:</strong> Pure Peek in 12 more languages, text in Greek, Cyrillic and Vietnamese in the app's own fonts, updates that arrive inside the app, Settings and Recent that keep your place, lighter big files, and Insider, an optional monthly way to support it. Since 1.5.16: EPUB and FB2 books, CBZ, CBR and CB7 comics, Word files with their formatting, and 7z, RAR and locked zips free to open. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
     <div class="shots">
       <figure><img src="img/photo.webp" srcset="img/photo-270.webp 270w, img/photo.webp 540w" sizes="(max-width: 860px) 45vw, 260px" alt="A photo of Lake Bled open in Pure Peek." width="540" height="1200" fetchpriority="high"><figcaption>A photo</figcaption></figure>
       <figure><img src="img/table.webp" srcset="img/table-270.webp 270w, img/table.webp 540w" sizes="(max-width: 860px) 45vw, 260px" alt="A CSV of expenses as a table with the header row and row numbers pinned." width="540" height="1200" loading="lazy"><figcaption>A CSV as a table</figcaption></figure>
@@ -121,8 +122,9 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
     <ul>
       <li>Photos: JPEG, PNG, WebP, HEIC and AVIF lose GPS, camera, lens, dates, owner and serial fields, XMP, IPTC, comments and content credentials. A JPEG keeps its colour profile and which way up it goes, and an Ultra HDR photo keeps its HDR. A Motion Photo's video is cut off.</li>
       <li>PDF: the copy is written fresh, with no author, creator, producer, dates, XMP or file ID, and no names on comments, and photos placed in it lose their camera details. A digital signature cannot stay valid in a changed file, so the copy leaves it out and says so.</li>
-      <li>Word, Excel and PowerPoint (and the LibreOffice formats): author, last saved by, company, manager and dates go, comment and change authors lose their names, and pictures inside are cleaned like photos.</li>
-      <li>Songs and videos: MP3 and FLAC lose their tags and cover art; MP4, MOV, M4A and 3GP lose their place, tags and dates.</li>
+      <li>Word, Excel and PowerPoint (and the LibreOffice formats): author, last saved by, company, manager and dates go, comment and change authors lose their names, the tenant label that Office files can carry goes too, and pictures inside are cleaned like photos.</li>
+      <li>Books: an EPUB loses the author, including the sort form of the author's name, and the tool notes that book programs such as calibre leave in the file.</li>
+      <li>Songs and videos: MP3 and FLAC lose their tags and cover art, and a FLAC also loses an old ID3v1 or APE tag at its end; MP4, MOV, M4A and 3GP lose their place, tags and dates.</li>
       <li>Zip: every photo, PDF, Office file, song and video inside is cleaned the same way, a zip inside it too, and their names lose their dates. Every file in the copy gets the same date, and the zip loses its comment. Other files go across unchanged; a file that cannot be cleaned is left out, and Pure Peek names it.</li>
       <li>The name: dates and times come out of it, and a camera name becomes photo, video or audio.</li>
     </ul>
@@ -133,7 +135,7 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
 
     <h2>Text, code and documents</h2>
     <p>Text, logs and code open with line numbers and wrap; both can be turned off in Settings. JSON has As saved and Tidy tabs, Markdown has Formatted and Source, and Word documents open with their formatting: headings, lists, tables, pictures and footnotes, flowing like a book. Bigger text and Smaller text are in More. Big files open fast: only the lines on screen are drawn, and a 52 MB log searches in a moment.</p>
-    <p>A file with the wrong name, like a picture saved as .bin, opens as what it really is, with a note. Anything Pure Peek cannot show opens as bytes.</p>
+    <p>PowerPoint, OpenDocument and Rich Text (RTF) files open as readable pages. A presentation shows a card for each slide, with Previous slide and Next slide, the slide number, and a key to copy the text of a slide. A file with the wrong name, like a picture saved as .bin, opens as what it really is, with a note. Anything Pure Peek cannot show opens as bytes.</p>
 
     <h2>Find</h2>
     <p>Find in this file works in text, code, tables and PDFs. Matches are marked, the current one stands out, and Previous match and Next match step through them. The count stops at 20,000 and shows 20,000+.</p>
