@@ -71,7 +71,8 @@ page("index.html", "Home", "The user guide for Pure Peek, the offline file viewe
     <p class="kicker">User guide</p>
     <h1>Pure Peek</h1>
     <p class="lede">Open any file and see it properly: photos at full quality, PDF, CSV and Excel tables, code, logs, Markdown, Word, web pages, books, comics, zip, 7z, RAR and more. Free, no ads, no internet permission. Opening, viewing and reading every file type never needs Pro; the tools are Pro.</p>
-    <p><strong>New in 1.20:</strong> Pure Peek opens OpenDocument files (text, spreadsheets and presentations), PowerPoint and Rich Text (RTF) files, with a card for each slide. Password and signing screens stay out of screenshots, big files use less memory, and a Pro payment that is pending unlocks once it clears. Back and the page title share one row, and text size and speed no longer open popups.</p>
+    <p><strong>New in 1.22:</strong> Settings, Language: pick the app's language, or follow the phone.</p>
+    <p><strong>Since 1.20:</strong> Pure Peek opens OpenDocument files (text, spreadsheets and presentations), PowerPoint and Rich Text (RTF) files, with a card for each slide. Password and signing screens stay out of screenshots, big files use less memory, and a Pro payment that is pending unlocks once it clears. Back and the page title share one row, and text size and speed no longer open popups.</p>
     <p><strong>Since 1.12:</strong> Pure Peek in 12 more languages, text in Greek, Cyrillic and Vietnamese in the app's own fonts, updates that arrive inside the app, Settings and Recent that keep your place, lighter big files, and Insider, an optional monthly way to support it. Since 1.5.16: EPUB and FB2 books, CBZ, CBR and CB7 comics, Word files with their formatting, and 7z, RAR and locked zips free to open. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
     <div class="shots">
       <figure><img src="img/photo.webp" srcset="img/photo-270.webp 270w, img/photo.webp 540w" sizes="(max-width: 860px) 45vw, 260px" alt="A photo of Lake Bled open in Pure Peek." width="540" height="1200" fetchpriority="high"><figcaption>A photo</figcaption></figure>
@@ -176,7 +177,7 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
     <p>One payment, yours for good. No account. A control that needs Pro says (Pro) after its name and opens the Pro sheet.</p>
 
     <h2>Settings</h2>
-    <p>Settings is the last item of the bottom bar, after Home and Recent. Each row opens a small page; Back returns to Settings, at the place you left it.</p>
+    <p>Settings is the last item of the bottom bar, after Home and Recent. Each row opens a small page; Back returns to Settings, at the place you left it. Language lists every language Pure Peek has: tap one to use it in the app, or Follow the phone to use the phone's language again.</p>
     <dl>
       <dt>Look</dt><dd>Follow the phone, Default Light, Default Dark or Black. Follow the phone uses Default Light by day and Default Dark at night.</dd>
       <dt>Text and tables</dt><dd>Text size, wrap long lines, line numbers, and whether a table's first row holds the column names.</dd>
@@ -196,7 +197,7 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
     <p>When Google Play has a new version, Pure Peek can fetch it while you keep reading. A bar above the bottom bar then says a new version is ready; tap Restart to use it. It takes a moment.</p>
 
     <h2>Languages</h2>
-    <p>Pure Peek speaks English, German, Spanish, French, Portuguese, Russian, Turkish, Hindi, Indonesian, Japanese and Korean, and since 1.12 also Italian, Dutch, Polish, Czech, Swedish, Romanian, Hungarian, Greek, Ukrainian, Vietnamese, Thai and Chinese. It follows the phone's language, and Greek, Cyrillic and Vietnamese text shows in the app's own fonts.</p>
+    <p>Pure Peek speaks English, German, Spanish, French, Portuguese, Russian, Turkish, Hindi, Indonesian, Japanese and Korean, and since 1.12 also Italian, Dutch, Polish, Czech, Swedish, Romanian, Hungarian, Greek, Ukrainian, Vietnamese, Thai and Chinese. It follows the phone's language until you pick one: Settings, Language shows every language, and Follow the phone puts it back. Greek, Cyrillic and Vietnamese text shows in the app's own fonts.</p>
 
     <h2>Accessibility</h2>
     <p>Every control has a TalkBack label, touch targets are at least 48 dp, text grows with the phone's text size up to 200 percent, and text keeps a 7 to 1 contrast in every look.</p>
