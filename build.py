@@ -71,7 +71,8 @@ page("index.html", "Home", "The user guide for Pure Peek, the offline file viewe
     <p class="kicker">User guide</p>
     <h1>Pure Peek</h1>
     <p class="lede">Open any file and see it properly: photos at full quality, PDF, CSV and Excel tables, code, logs, Markdown, Word, web pages, books, comics, zip, 7z, RAR and more. Free, no ads, no internet permission. Opening, viewing and reading every file type never needs Pro; the tools are Pro.</p>
-    <p><strong>New in 1.22:</strong> Settings, Language: pick the app's language, or follow the phone.</p>
+    <p><strong>New in 1.23:</strong> Settings is tidier: About and widgets have pages of their own, and Privacy, Help and About sit at the end.</p>
+    <p><strong>Since 1.22:</strong> Settings, Language: pick the app's language, or follow the phone.</p>
     <p><strong>Since 1.20:</strong> Pure Peek opens OpenDocument files (text, spreadsheets and presentations), PowerPoint and Rich Text (RTF) files, with a card for each slide. Password and signing screens stay out of screenshots, big files use less memory, and a Pro payment that is pending unlocks once it clears. Back and the page title share one row, and text size and speed no longer open popups.</p>
     <p><strong>Since 1.12:</strong> Pure Peek in 12 more languages, text in Greek, Cyrillic and Vietnamese in the app's own fonts, updates that arrive inside the app, Settings and Recent that keep your place, lighter big files, and Insider, an optional monthly way to support it. Since 1.5.16: EPUB and FB2 books, CBZ, CBR and CB7 comics, Word files with their formatting, and 7z, RAR and locked zips free to open. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
     <div class="shots">
@@ -177,20 +178,20 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
     <p>One payment, yours for good. No account. A control that needs Pro says (Pro) after its name and opens the Pro sheet.</p>
 
     <h2>Settings</h2>
-    <p>Settings is the last item of the bottom bar, after Home and Recent. Each row opens a small page; Back returns to Settings, at the place you left it. Language lists every language Pure Peek has: tap one to use it in the app, or Follow the phone to use the phone's language again.</p>
+    <p>Settings is the last item of the bottom bar, after Home and Recent. Each row opens a small page; Back returns to Settings, at the place you left it. Widget and About open pages of their own, and Privacy, Help and About sit at the end. Language lists every language Pure Peek has: tap one to use it in the app, or Follow the phone to use the phone's language again.</p>
     <dl>
       <dt>Look</dt><dd>Follow the phone, Default Light, Default Dark or Black. Follow the phone uses Default Light by day and Default Dark at night.</dd>
       <dt>Text and tables</dt><dd>Text size, wrap long lines, line numbers, and whether a table's first row holds the column names.</dd>
       <dt>Books, sound and Read aloud</dt><dd>Book text size, Turn pages in books, Night pages, Play again from the start for video and audio, and the speed and voice of Read aloud (Pro).</dd>
       <dt>Opening files</dt><dd>Which app opens PDFs now, how to make Pure Peek the one, folders as a grid or a list and newest first or by name, and Remember recent files; turning it off forgets the list at once.</dd>
       <dt>Signatures</dt><dd>Draw a new signature, and see or delete the ones you keep. Signing with them is part of Pro.</dd>
-      <dt>Widget</dt><dd>Open files, Open a folder and Photos in one tap on the home screen.</dd>
+      <dt>Widget</dt><dd>Opens a page with the widgets and how to add them: Open files, Open a folder and Photos in one tap on the home screen.</dd>
       <dt>Privacy</dt><dd>The promises, every permission Pure Peek has and why: Google Play billing for Pro, and the foreground service and media playback that let Read aloud (Pro) keep reading with the screen off, what happens to your files, and the privacy policy.</dd>
       <dt>Pro</dt><dd>See what Pro adds, buy it once, or Restore purchase.</dd>
       <dt>Help and feedback</dt><dd>How to open files, this guide, the report page, the privacy policy and the credits.</dd>
       <dt>Support the developer</dt><dd>If Pure Peek helps you, you can support it. Insider is an optional subscription, 0.99 a month through Google Play, that pays for bug fixes and new file formats. Insiders get new features first, their requests read first, and an Insider mark in About. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time.</dd>
       <dt>More apps</dt><dd>The other apps from Zanoshky.</dd>
-      <dt>About</dt><dd>The version of Pure Peek you have, and the Insider mark with its month for an Insider.</dd>
+      <dt>About</dt><dd>The last row. It opens a page with the version of Pure Peek you have, and the Insider mark with its month for an Insider.</dd>
     </dl>
 
     <h2 id="updates">Updates</h2>
@@ -343,7 +344,7 @@ page("report.html", "Report a bug", "How to report a Pure Peek bug or ask for a 
 
     <h2>What helps</h2>
     <dl>
-      <dt>App version</dt><dd>Settings in Pure Peek, at the bottom.</dd>
+      <dt>App version</dt><dd>Settings in Pure Peek, About, the last row.</dd>
       <dt>Phone model and Android version</dt><dd>Android settings, About phone.</dd>
       <dt>The kind of file</dt><dd>Its name ending, like .pdf or .csv, and its size.</dd>
       <dt>Steps</dt><dd>What you did, one step per line, so we can do the same.</dd>
