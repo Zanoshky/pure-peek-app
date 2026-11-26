@@ -71,7 +71,8 @@ page("index.html", "Home", "The user guide for Pure Peek, the offline file viewe
     <p class="kicker">User guide</p>
     <h1>Pure Peek</h1>
     <p class="lede">Open any file and see it properly: photos at full quality, PDF, CSV and Excel tables, code, logs, Markdown, Word, web pages, books, comics, zip, 7z, RAR and more. Free, no ads, no internet permission. Opening, viewing and reading every file type never needs Pro; the tools are Pro.</p>
-    <p><strong>New in 1.23:</strong> Settings is tidier: About and widgets have pages of their own, and Privacy, Help and About sit at the end.</p>
+    <p><strong>New in 1.24:</strong> Copy text from pictures: long press a line in a photo. Markdown looks like GitHub: coloured code, alerts, tables, task boxes, footnotes. Mermaid diagrams are drawn in Markdown files.</p>
+    <p><strong>Since 1.23:</strong> Settings is tidier: About and widgets have pages of their own, and Privacy, Help and About sit at the end.</p>
     <p><strong>Since 1.22:</strong> Settings, Language: pick the app's language, or follow the phone.</p>
     <p><strong>Since 1.20:</strong> Pure Peek opens OpenDocument files (text, spreadsheets and presentations), PowerPoint and Rich Text (RTF) files, with a card for each slide. Password and signing screens stay out of screenshots, big files use less memory, and a Pro payment that is pending unlocks once it clears. Back and the page title share one row, and text size and speed no longer open popups.</p>
     <p><strong>Since 1.12:</strong> Pure Peek in 12 more languages, text in Greek, Cyrillic and Vietnamese in the app's own fonts, updates that arrive inside the app, Settings and Recent that keep your place, lighter big files, and Insider, an optional monthly way to support it. Since 1.5.16: EPUB and FB2 books, CBZ, CBR and CB7 comics, Word files with their formatting, and 7z, RAR and locked zips free to open. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
@@ -110,6 +111,7 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
     <h2>Photos</h2>
     <p>Photos open at full resolution, drawn in tiles, so zooming into a big photo stays sharp. Pinch to zoom, double tap for actual pixels, double tap again to fit. JPEG, PNG, WebP, HEIC, AVIF, GIF, DNG, BMP and more. Ultra HDR and wide colour photos show in full on screens that can.</p>
     <p>About this file lists pixels, megapixels, colour space, camera, lens, exposure, ISO and when it was taken. More has Turn a quarter and Use as wallpaper or contact photo. With Pro, Share a privacy copy sends a copy with the place and camera details taken out and leaves the original alone.</p>
+    <p><strong>Copy text from pictures (new in 1.24).</strong> Long press a line of text in a photo to select it. Boxes light up over the picture, then pick Copy, Select all or Done. You can also choose Copy text in picture in More. It is free for everyone and works on the phone with no internet. The Pro tool that reads the text in photos and scans is unchanged.</p>
 
     <h2>PDF</h2>
     <p>Pages render again at every zoom, so small print stays crisp. More has Go to page, First page, Last page, Copy the text of this page, Print, and on dark looks, Night pages, which shows PDFs as light text on dark. A PDF opens on the page you left it. A locked PDF asks for its password. On a tablet or a wide screen, a page strip sits beside the document.</p>
@@ -136,7 +138,8 @@ page("guide.html", "Guide", "How to use Pure Peek: opening files, photos, PDF, t
     <p>CSV, TSV and Excel files open as tables with the header row and the row numbers pinned while you scroll. Tap a column name for Copy the column, and with Pro, Sort smallest to largest, Sort largest to smallest and Column stats (sum, average, smallest, largest, most common values). Excel files with several sheets show a tab for each sheet. More has Copy as CSV for the whole table, and a switch for files whose first row is data, not names; Settings sets the default.</p>
 
     <h2>Text, code and documents</h2>
-    <p>Text, logs and code open with line numbers and wrap; both can be turned off in Settings. JSON has As saved and Tidy tabs, Markdown has Formatted and Source, and Word documents open with their formatting: headings, lists, tables, pictures and footnotes, flowing like a book. Bigger text and Smaller text are in More. Big files open fast: only the lines on screen are drawn, and a 52 MB log searches in a moment.</p>
+    <p>Text, logs and code open with line numbers and wrap; both can be turned off in Settings. JSON has As saved and Tidy tabs, Markdown has Formatted and Source (new in 1.24: Markdown looks like GitHub, see below), and Word documents open with their formatting: headings, lists, tables, pictures and footnotes, flowing like a book. Bigger text and Smaller text are in More. Big files open fast: only the lines on screen are drawn, and a 52 MB log searches in a moment.</p>
+    <p><strong>Markdown looks like GitHub (new in 1.24).</strong> Code is coloured and has a language label. Alerts (NOTE, TIP, IMPORTANT, WARNING and CAUTION) stand out. Tables have aligned columns and striped rows. Task boxes, footnotes, front matter, details blocks and kbd keys all show. Mermaid diagrams in a Markdown file (flowcharts, sequence diagrams, pie charts and more) are drawn as pictures, on the phone, with nothing loaded from outside. Mermaid is MIT licensed.</p>
     <p>PowerPoint, OpenDocument and Rich Text (RTF) files open as readable pages. A presentation shows a card for each slide, with Previous slide and Next slide, the slide number, and a key to copy the text of a slide. A file with the wrong name, like a picture saved as .bin, opens as what it really is, with a note. Anything Pure Peek cannot show opens as bytes.</p>
 
     <h2>Find</h2>
@@ -233,6 +236,13 @@ page("cookbook.html", "Cookbook", "Short Pure Peek recipes: open PDFs by default
     <h2>Get the text out of a scan (Pro)</h2>
     <ol><li>Open the photo or scanned PDF.</li><li>More, Read the text in this photo, or Read the text in this page (for scans).</li><li>Copy it. It is read on the phone, with no internet.</li></ol>
 
+    <h2>Copy text from a photo</h2>
+    <ol><li>Open the photo and long press a line of text in it.</li><li>Boxes show over the picture. Tap Select all to pick every line.</li><li>Tap Copy, then Done. Or use More, Copy text in picture.</li></ol>
+    <p>Free, on the phone, with no internet.</p>
+
+    <h2>See a Mermaid diagram in Markdown</h2>
+    <ol><li>Open a Markdown file with a mermaid code block.</li><li>On the Formatted tab, the diagram is drawn as a picture. Source shows the text.</li></ol>
+
     <h2>Listen to a document (Pro)</h2>
     <ol><li>Open a text, Markdown, Word file, book or PDF.</li><li>More, Read aloud. It keeps reading with the screen off.</li></ol>
 
@@ -296,6 +306,12 @@ page("faq.html", "Questions", "Answers to common questions about Pure Peek, and 
 
     <h2>Pure Peek is not in the Open with list</h2>
     <p>Another app may be set to always open that kind of file. Open Android settings, Apps, that app, Open by default, and tap Clear defaults. Next time you tap a file, Android asks again. Settings, Opening files in Pure Peek names the app that opens PDFs now.</p>
+
+    <h2>Can I copy text from a photo?</h2>
+    <p>Yes, free. Long press a line of text in the photo, or choose Copy text in picture in More. It works on the phone with no internet. Reading all the text in a photo or a scan at once is the Pro tool.</p>
+
+    <h2>Does a Mermaid diagram load anything from the internet?</h2>
+    <p>No. Mermaid diagrams in Markdown files are drawn on the phone, and nothing is loaded from outside. Mermaid is MIT licensed.</p>
 
     <h2>Can it edit files?</h2>
     <p>No. Pure Peek only shows files and never changes or resaves them. The Pro tools, like signing, make a new copy and leave the original alone.</p>
